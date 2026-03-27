@@ -1,0 +1,259 @@
+<html>
+<head>
+    <title>My Portfolio | Martinez</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%; 
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0D1117;
+            color: #E6EDF3;
+            display: flex;
+            flex-direction: column;
+            scroll-behavior: smooth;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;         
+            background-color: #161B22;
+            padding: 15px 250px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;        
+            z-index: 100;               
+            border-bottom: 1px solid #30363D;
+        }
+
+        .name{
+            color: #E6EDF3;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .navigation{
+            display: flex;
+            gap: 30px;
+        }
+
+        .navigation a{
+            color: #E6EDF3;
+            text-decoration: none;
+            font-size: 20px;    
+        }
+
+        .navigation a:hover{
+            color: #58A6FF;
+        }
+
+        section{
+            padding: 100px 50px 50px 50px;
+            min-height: 100vh;
+        }
+
+        .main {
+            flex: 1;
+            padding: 30px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main h1{
+            font-size: 60px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            margin-left: 150px;
+        }
+
+        .main h2{
+            font-size: 30px;
+            margin-top: 10px;
+            color: #58A6FF;
+            margin-bottom: 5px;
+            margin-left: 150px;
+        }
+
+        .tagline{
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: normal;
+            margin-left: 150px;
+        }
+
+        .box {
+            margin-right: 150px;
+            width: 400px;   
+            height: 400px;        
+            border: 1px solid #58A6FF;
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #161B22;
+            border-radius: 10px;
+        }
+
+        .gridContainer{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+            width: 100%;
+            height: 100%;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .gridItem{
+            background-color: #0D1117;
+            border: 1px solid #30363D;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+            width: 100%;
+            height: 100%;
+        }
+
+        .gridItem:hover{
+            border-color: #58A6FF;
+            background-color: #1C2330;
+        }
+
+        .gridItem img{
+            width: 50px;
+            height: 50px;
+            filter: brightness(0) invert(1);
+        }
+
+        .aboutme {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            padding: 150px 50px 50px 50px;
+        }
+
+        .image-box {
+            padding: 0%;
+        }
+
+        .image-box img {
+            width: 55%;
+            max-width: 800px;
+            padding-left: 70px;
+        }
+
+        .about-content {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            padding-right: 30px;
+        }
+
+        .about-content h1 {
+            margin: 0 0 10px 0;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .about-content p {
+            margin: 0;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        .boxes-container {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .boxes{
+            text-decoration: none;
+            color: #E6EDF3;
+            background-color: #161B22;
+            border: 1px solid #58A6FF;
+            border-radius: 5px;
+            padding: 15px 25px;
+            transition: 0.3s;
+        }
+
+        .boxes:hover{
+            background-color: #1C2330;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="name">Martinez, Mark Brent B.</div>
+        <div class="navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#cert">Certificate</a>
+            <a href="#techStack">Tech Stack</a>
+        </div>
+    </div>
+
+    <section id="home" class="main">
+        <div style="max-width: 60%;">
+            <h1>Hello, I'm Mark Brent</h1>
+            <h2>Future Cyber Security Software Developer</h2>
+            <p class="tagline">Aspiring cybersecurity specialist focused on protecting digital systems.</p>
+            <p class="tagline">Building skills to defend against evolving threats.</p>
+        </div>
+
+        <div class="box">
+            <h4>Contact me</h4>
+            <p>Let's do our best</p>
+            <div class="gridContainer">
+                <a href="https://github.com/markmartinez07" target="_blank" class="gridItem">
+                    <img src="social.png">
+                </a>
+                <a href="https://www.facebook.com/markbrent.martinez.3" class="gridItem">
+                    <img src="facebook-logo.png">
+                </a>
+                <a href="www.linkedin.com/in/mark-brent-martinez-81a8673b9" class="gridItem">
+                    <img src="linkedin.png">
+                </a>
+                <a href="mailto:markmartinezzz77@gmail.com" class="gridItem">
+                    <img src="mail.png">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="aboutme">
+        <div class="image-box">
+            <img src="me.jpg">
+        </div>
+
+        <div class="about-content">
+            <h1>About me</h1>
+            <p>
+                Hi, my name is Mark Brent Martinez, and I'm an Information Technology student from STI College Malolos, Philippines.<br>
+                I have experience in web development and have built some projects using Java, C#, and HTML.<br>
+                I'm skilled in problem-solving and creating user-friendly web designs.<br>
+                In my free time, I enjoy practicing code and exploring cybersecurity trends.<br>
+                I hope to grow as a software developer and contribute to projects that make technology more accessible.
+            </p>
+
+            <div class="boxes-container">
+                <a href="projects.html" class="boxes">project</a>
+                <a href="certificates.html" class="boxes">certificate</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="cert"></section>
+    <section id="techStack"></section>
+</body>
+</html>
